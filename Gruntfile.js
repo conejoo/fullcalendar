@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 		'clean:modules',
 		'lumbar:build',
 		'concat:moduleVariables',
-		'jshint:builtModules',
+		//'jshint:builtModules',
 		'uglify:modules',
 		'cssmin:modules'
 	]);
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('languages', [
 		'jscs:srcLanguages',
-		'jshint:srcLanguages',
+		//'jshint:srcLanguages',
 		'clean:languages',
 		'generateLanguages',
 		'uglify:languages',
